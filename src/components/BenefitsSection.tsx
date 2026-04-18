@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TrendingDown, Zap, FolderKanban, Rocket, Repeat, PhoneIncoming, Clock } from "lucide-react";
+import { TrendingDown, Zap, FolderKanban, Rocket, Repeat, Clock } from "lucide-react";
 
 const benefits = [
   { icon: TrendingDown, title: "Reduce operational workload", desc: "Stop spending hours on repetitive calls and manual tracking." },
@@ -7,7 +7,6 @@ const benefits = [
   { icon: FolderKanban, title: "Keep every request organized", desc: "Structured tickets, clear priorities, nothing slips through." },
   { icon: Rocket, title: "Handle more properties, same team", desc: "Scale your operations without scaling your headcount." },
   { icon: Repeat, title: "Cut down repetitive requests", desc: "Handle a large portion of repetitive resident questions automatically." },
-  { icon: PhoneIncoming, title: "Capture more calls", desc: "Significantly reduce missed calls and response delays." },
   { icon: Clock, title: "Free up hours every week", desc: "Reclaim manual work time for higher-impact priorities." },
 ];
 

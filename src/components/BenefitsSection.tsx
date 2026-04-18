@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { TrendingDown, Zap, Clock, FolderKanban } from "lucide-react";
+import { TrendingDown, Zap, FolderKanban, Rocket } from "lucide-react";
 
 const benefits = [
-  { icon: TrendingDown, title: "Reduce Operational Workload", desc: "Automate repetitive tasks so your team focuses on what matters." },
-  { icon: Zap, title: "Improve Response Time", desc: "Residents get instant answers, 24 hours a day, 7 days a week." },
-  { icon: Clock, title: "24/7 Community Support", desc: "Your AI front desk never sleeps, never takes breaks, always ready." },
-  { icon: FolderKanban, title: "Organized Maintenance", desc: "Every request is categorized, tracked, and routed to the right team." },
+  { icon: TrendingDown, title: "Reduce operational workload", desc: "Free your team from repetitive calls and manual tracking." },
+  { icon: Zap, title: "Respond instantly, 24/7", desc: "Residents get answers in seconds — not hours or days." },
+  { icon: FolderKanban, title: "Keep every request organized", desc: "Structured tickets, clear priorities, nothing slips through." },
+  { icon: Rocket, title: "Scale without hiring", desc: "Handle more units, more residents, more requests — same team." },
 ];
 
 const BenefitsSection = () => (
@@ -32,7 +32,7 @@ const BenefitsSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="flex gap-4 p-6 rounded-2xl bg-background border border-border/50 hover:shadow-lg transition-shadow"
+            className="card-lift flex gap-4 p-6 rounded-2xl bg-background border border-border/50"
           >
             <div className="w-12 h-12 rounded-xl gradient-glow-bg flex items-center justify-center shrink-0">
               <b.icon className="w-6 h-6 text-primary" />

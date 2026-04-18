@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { PhoneCall, Brain, ClipboardCheck, Users } from "lucide-react";
 
 const steps = [
-  { icon: PhoneCall, title: "Resident Calls or Chats", desc: "A resident reaches out via phone or chatbot." },
-  { icon: Brain, title: "AI Understands the Request", desc: "NeoHome processes and categorizes the inquiry." },
-  { icon: ClipboardCheck, title: "Ticket or Request Created", desc: "A structured ticket is generated automatically." },
-  { icon: Users, title: "Team Gets Organized Info", desc: "Management receives clear, actionable information." },
+  { icon: PhoneCall, title: "Resident reaches out", desc: "By phone or chat — anytime, day or night." },
+  { icon: Brain, title: "NeoHome understands", desc: "AI captures the request and gathers the right details." },
+  { icon: ClipboardCheck, title: "Structured ticket created", desc: "Categorized, prioritized, and ready to act on." },
+  { icon: Users, title: "Your team takes action", desc: "Clear, organized work routed to the right people." },
 ];
 
 const HowItWorksSection = () => (
@@ -24,8 +24,17 @@ const HowItWorksSection = () => (
       </motion.div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-        {/* Connecting line */}
-        <div className="hidden lg:block absolute top-14 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-primary/30 via-secondary/30 to-primary/30" />
+        {/* Connecting line with animated gradient */}
+        <div className="hidden lg:block absolute top-7 left-[12.5%] right-[12.5%] h-0.5 rounded-full overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-secondary/40 to-primary/40" />
+          <motion.div
+            initial={{ x: "-100%" }}
+            whileInView={{ x: "100%" }}
+            viewport={{ once: true }}
+            transition={{ duration: 2.4, ease: "easeInOut" }}
+            className="absolute inset-y-0 w-1/3 bg-gradient-to-r from-transparent via-primary to-transparent"
+          />
+        </div>
 
         {steps.map((s, i) => (
           <motion.div

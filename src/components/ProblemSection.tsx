@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { MessageSquareMore, ClipboardList, Clock, Radio } from "lucide-react";
+import { MessageSquareMore, ClipboardList, AlertCircle, MoonStar } from "lucide-react";
 
 const problems = [
-  { icon: MessageSquareMore, title: "Constant Requests", desc: "Residents call and message non-stop with questions, complaints, and requests." },
-  { icon: ClipboardList, title: "Manual Tracking", desc: "Maintenance issues tracked across spreadsheets, emails, and sticky notes." },
-  { icon: Clock, title: "Slow Response Times", desc: "Residents wait hours or days for answers to simple community questions." },
-  { icon: Radio, title: "Fragmented Communication", desc: "Information scattered between managers, vendors, and residents with no single source." },
+  { icon: MessageSquareMore, title: "Endless Repeat Questions", desc: "Your team answers the same things over and over — pool hours, payments, package pickups." },
+  { icon: ClipboardList, title: "Requests From Everywhere", desc: "Calls, texts, emails, voicemails. No standard intake means no standard process." },
+  { icon: AlertCircle, title: "Things Slip Through", desc: "Without structure, requests get missed, delayed, or forgotten — and residents notice." },
+  { icon: MoonStar, title: "After-Hours Gaps", desc: "Issues happen at night and on weekends. Nobody's there to capture them." },
 ];
 
 const ProblemSection = () => (
@@ -19,10 +19,10 @@ const ProblemSection = () => (
       >
         <span className="text-sm font-semibold text-primary uppercase tracking-widest">The Problem</span>
         <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3 mb-4">
-          Community Management is <span className="gradient-text">Broken</span>
+          Running a Community is <span className="gradient-text">Chaotic</span>
         </h2>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-          Property managers are overwhelmed. Residents are frustrated. The tools haven't caught up.
+          You're juggling calls, messages, and tickets across a dozen places. Things slip. Residents wait. Your team burns out.
         </p>
       </motion.div>
 
@@ -34,7 +34,7 @@ const ProblemSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="gradient-border p-6 rounded-2xl bg-card hover:shadow-lg transition-shadow"
+            className="gradient-border card-lift p-6 rounded-2xl bg-card"
             style={{ boxShadow: 'var(--shadow-card)' }}
           >
             <div className="w-12 h-12 rounded-xl gradient-glow-bg flex items-center justify-center mb-4">

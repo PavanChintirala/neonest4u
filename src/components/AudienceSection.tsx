@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Building2, Home, Briefcase } from "lucide-react";
 
 const audiences = [
-  { icon: Building2, title: "Apartment Communities", desc: "Streamline communication and maintenance for large residential complexes." },
-  { icon: Home, title: "HOA Communities", desc: "Automate resident inquiries about rules, dues, and community updates." },
-  { icon: Briefcase, title: "Property Management Companies", desc: "Scale operations across multiple properties with AI-powered support." },
+  { icon: Building2, title: "Apartment Communities", desc: "Less front-desk chaos. More resident satisfaction." },
+  { icon: Home, title: "HOA Communities", desc: "Instant answers on rules, dues, and updates." },
+  { icon: Briefcase, title: "Property Management Companies", desc: "One system across every property you manage." },
 ];
 
 const AudienceSection = () => (
@@ -30,7 +30,7 @@ const AudienceSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.12 }}
-            className="text-center p-8 rounded-2xl gradient-border bg-card hover:shadow-lg transition-shadow"
+            className="text-center p-8 rounded-2xl gradient-border card-lift bg-card"
             style={{ boxShadow: 'var(--shadow-card)' }}
           >
             <div className="w-14 h-14 rounded-2xl gradient-bg flex items-center justify-center mx-auto mb-5" style={{ boxShadow: 'var(--shadow-glow)' }}>

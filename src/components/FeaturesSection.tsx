@@ -4,24 +4,24 @@ import { Phone, MessageCircle, Wrench, Check } from "lucide-react";
 const features = [
   {
     icon: Phone,
-    title: "AI Phone Agent",
-    subtitle: "For Property Managers",
-    desc: "Answers every call and captures every request automatically — even after hours.",
-    outcome: "Never miss a call or lose a request.",
+    title: "Never Miss a Resident Call",
+    subtitle: "AI Phone Agent",
+    desc: "AI answers calls and captures requests instantly — day, night, and weekends.",
+    outcome: "No voicemail, no lost issues.",
   },
   {
     icon: MessageCircle,
-    title: "Resident AI Chat",
-    subtitle: "For Residents",
-    desc: "Instant answers about rules, amenities, payments, and maintenance — anytime.",
-    outcome: "Reduce interruptions and response time.",
+    title: "Reduce Constant Questions",
+    subtitle: "Resident AI Chat",
+    desc: "Residents get instant answers about rules, amenities, payments, and more.",
+    outcome: "Fewer interruptions for your team.",
   },
   {
     icon: Wrench,
-    title: "Smart Maintenance",
-    subtitle: "Coordination",
-    desc: "Turns conversations into structured, trackable tickets routed to the right team.",
-    outcome: "Your team gets clear, actionable work.",
+    title: "Turn Conversations Into Work",
+    subtitle: "Smart Coordination",
+    desc: "Every call and chat becomes a structured, trackable task routed to the right team.",
+    outcome: "Your team gets clear, actionable information.",
   },
 ];
 

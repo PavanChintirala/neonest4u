@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { MessageSquareMore, ClipboardList, AlertCircle, MoonStar } from "lucide-react";
 
 const problems = [
-  { icon: MessageSquareMore, title: "Endless Repeat Questions", desc: "Your team answers the same things over and over — pool hours, payments, package pickups." },
-  { icon: ClipboardList, title: "Requests From Everywhere", desc: "Calls, texts, emails, voicemails. No standard intake means no standard process." },
-  { icon: AlertCircle, title: "Things Slip Through", desc: "Without structure, requests get missed, delayed, or forgotten — and residents notice." },
-  { icon: MoonStar, title: "After-Hours Gaps", desc: "Issues happen at night and on weekends. Nobody's there to capture them." },
+  { icon: MessageSquareMore, title: "Same Questions, All Day", desc: "Residents call, text, and email all day — often about the exact same things." },
+  { icon: ClipboardList, title: "Scattered Requests", desc: "Calls, emails, messages — they all end up in different places, with no clear system." },
+  { icon: AlertCircle, title: "Things Get Missed", desc: "Some requests get tracked. Some don't. And residents are the ones who notice." },
+  { icon: MoonStar, title: "After-Hours Silence", desc: "Issues happen at night and on weekends — and go unanswered or delayed." },
 ];
 
 const ProblemSection = () => (

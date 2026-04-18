@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { TrendingDown, Zap, FolderKanban, Rocket } from "lucide-react";
 
 const benefits = [
-  { icon: TrendingDown, title: "Reduce operational workload", desc: "Free your team from repetitive calls and manual tracking." },
+  { icon: TrendingDown, title: "Reduce operational workload", desc: "Stop spending hours on repetitive calls and manual tracking." },
   { icon: Zap, title: "Respond instantly, 24/7", desc: "Residents get answers in seconds — not hours or days." },
   { icon: FolderKanban, title: "Keep every request organized", desc: "Structured tickets, clear priorities, nothing slips through." },
-  { icon: Rocket, title: "Scale without hiring", desc: "Handle more units, more residents, more requests — same team." },
+  { icon: Rocket, title: "Handle more properties, same team", desc: "Scale your operations without scaling your headcount." },
 ];
 
 const BenefitsSection = () => (

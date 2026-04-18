@@ -21,14 +21,14 @@ const HeroSection = () => {
             <span className="text-sm font-medium text-primary">AI-Powered Community Operations</span>
           </div>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-foreground mb-6">
-            Your 24/7 AI Front Desk for{" "}
-            <span className="gradient-text">Modern Communities</span>
+            Stop Losing Track of{" "}
+            <span className="gradient-text">Resident Requests</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-4 leading-relaxed">
-            Handle resident calls, messages, and maintenance requests automatically — and turn them into organized, trackable work for your team.
+            NeoHome handles calls, messages, and maintenance requests — and turns them into organized, trackable work automatically.
           </p>
           <p className="text-base text-foreground/70 max-w-xl mb-8 font-medium">
-            No more missed calls. No more messy tracking. No more scattered communication.
+            No more missed calls. No more scattered notes. No more things slipping through.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#cta" className="cta-glow text-primary-foreground px-8 py-3.5 rounded-full font-semibold text-base inline-flex items-center gap-2">

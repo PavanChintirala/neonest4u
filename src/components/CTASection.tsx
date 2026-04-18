@@ -20,8 +20,11 @@ const CTASection = () => (
         <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
           Bring Order to <span className="gradient-text">Your Community Operations</span>
         </h2>
-        <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
-          Handle calls, messages, and maintenance without the chaos. Be among the first to try NeoHome.
+        <p className="text-muted-foreground text-lg mb-3 max-w-xl mx-auto">
+          Handle calls, messages, and maintenance without the chaos.
+        </p>
+        <p className="text-sm font-semibold text-primary mb-8 uppercase tracking-wider">
+          Limited early access available
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <a href="#" className="cta-glow text-primary-foreground px-8 py-3.5 rounded-full font-semibold text-base inline-flex items-center gap-2">

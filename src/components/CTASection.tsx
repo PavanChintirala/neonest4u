@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 const CTASection = () => (
   <section id="cta" className="section-padding relative overflow-hidden">
@@ -12,15 +13,20 @@ const CTASection = () => (
       className="max-w-3xl mx-auto text-center relative z-10"
     >
       <div className="gradient-border rounded-3xl p-12 md:p-16 bg-card" style={{ boxShadow: 'var(--shadow-glow)' }}>
+        <div className="inline-flex items-center gap-2 gradient-glow-bg border border-primary/20 rounded-full px-4 py-1.5 mb-6">
+          <Sparkles className="w-3.5 h-3.5 text-primary" />
+          <span className="text-xs font-semibold text-primary uppercase tracking-wider">Limited Early Access</span>
+        </div>
         <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-          Bring AI to <span className="gradient-text">Your Community</span>
+          Bring Order to <span className="gradient-text">Your Community Operations</span>
         </h2>
         <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
-          Join the future of community management. Get started with NeoHome today.
+          Handle calls, messages, and maintenance without the chaos. Be among the first to try NeoHome.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <a href="#" className="gradient-bg text-primary-foreground px-8 py-3.5 rounded-full font-semibold text-base hover:opacity-90 transition-opacity" style={{ boxShadow: 'var(--shadow-glow)' }}>
+          <a href="#" className="cta-glow text-primary-foreground px-8 py-3.5 rounded-full font-semibold text-base inline-flex items-center gap-2">
             Request Demo
+            <ArrowRight className="w-4 h-4" />
           </a>
           <a href="#" className="border border-border bg-background text-foreground px-8 py-3.5 rounded-full font-semibold text-base hover:bg-muted transition-colors">
             Join the Waitlist

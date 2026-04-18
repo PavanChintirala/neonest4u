@@ -13,11 +13,11 @@ const VisionSection = () => (
         <Sparkles className="w-8 h-8 text-primary mx-auto mb-4" />
         <span className="text-sm font-semibold text-primary uppercase tracking-widest">Our Vision</span>
         <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3 mb-6">
-          The AI Operating System for{" "}
-          <span className="gradient-text">Residential Communities</span>
+          One system for{" "}
+          <span className="gradient-text">communication and operations</span>
         </h2>
-        <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-          NeoHome will evolve into a comprehensive AI operating system for residential communities — automating communication, maintenance coordination, and resident support across every touchpoint.
+        <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          NeoHome is becoming the connective layer between residents and the teams that serve them — turning every conversation into organized work.
         </p>
       </motion.div>
     </div>

@@ -111,7 +111,35 @@
   }
 
   .gradient-border:hover::before {
-    opacity: 0.6;
+    opacity: 0.8;
+  }
+
+  .card-lift {
+    transition: transform 0.35s cubic-bezier(.2,.8,.2,1), box-shadow 0.35s ease;
+  }
+
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .cta-glow {
+    position: relative;
+    background-image: var(--gradient-primary);
+    background-size: 200% 200%;
+    animation: gradient-shift 6s ease infinite;
+    box-shadow: 0 10px 30px -10px hsl(225, 85%, 55%, 0.5), 0 0 0 1px hsl(225, 85%, 55%, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+
+  .cta-glow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 40px -10px hsl(225, 85%, 55%, 0.65), 0 0 0 1px hsl(265, 60%, 60%, 0.3);
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
   }
 
   .glow-orb {

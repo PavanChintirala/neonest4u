@@ -13,27 +13,30 @@ const CTASection = () => (
       className="max-w-4xl mx-auto text-center relative z-10"
     >
       <div className="panel-vibrant rounded-3xl p-12 md:p-16 relative overflow-hidden" style={{ boxShadow: '0 30px 80px -20px hsl(254, 100%, 62%, 0.45), 0 0 0 1px hsl(48, 100%, 65%, 0.3)' }}>
-        <div className="inline-flex items-center gap-2 gradient-glow-bg border border-primary/20 rounded-full px-4 py-1.5 mb-6">
-          <Sparkles className="w-3.5 h-3.5 text-primary" />
-          <span className="text-xs font-semibold text-primary uppercase tracking-wider">Limited Early Access</span>
-        </div>
-        <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-          Bring Order to <span className="gradient-text">Your Community Operations</span>
-        </h2>
-        <p className="text-muted-foreground text-lg mb-3 max-w-xl mx-auto">
-          Handle calls, messages, and maintenance without the chaos.
-        </p>
-        <p className="text-sm font-semibold text-primary mb-8 uppercase tracking-wider">
-          Limited early access available
-        </p>
-        <div className="flex flex-wrap gap-4 justify-center">
-          <a href="#" className="cta-glow text-primary-foreground px-8 py-3.5 rounded-full font-semibold text-base inline-flex items-center gap-2">
-            Request Demo
-            <ArrowRight className="w-4 h-4" />
-          </a>
-          <a href="#" className="btn-secondary-outline px-8 py-3.5 rounded-full font-semibold text-base">
-            Join the Waitlist
-          </a>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(48,100%,80%,0.5),transparent_50%)] pointer-events-none" />
+        <div className="relative z-10">
+          <div className="inline-flex items-center gap-2 bg-white/25 backdrop-blur border border-white/40 rounded-full px-4 py-1.5 mb-6">
+            <Sparkles className="w-3.5 h-3.5 text-white" />
+            <span className="text-xs font-semibold text-white uppercase tracking-wider">Limited Early Access</span>
+          </div>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-sm">
+            Bring Order to <span className="text-foreground bg-primary px-3 rounded-lg inline-block">Your Community Operations</span>
+          </h2>
+          <p className="text-white/90 text-lg mb-3 max-w-xl mx-auto">
+            Handle calls, messages, and maintenance without the chaos.
+          </p>
+          <p className="text-sm font-semibold text-white/80 mb-8 uppercase tracking-wider">
+            Limited early access available
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <a href="#" className="cta-glow px-8 py-3.5 rounded-full font-semibold text-base inline-flex items-center gap-2">
+              Request Demo
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <a href="#" className="bg-white/15 backdrop-blur border border-white/50 text-white hover:bg-white hover:text-accent transition-all px-8 py-3.5 rounded-full font-semibold text-base">
+              Join the Waitlist
+            </a>
+          </div>
         </div>
       </div>
     </motion.div>

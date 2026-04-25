@@ -3,16 +3,16 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 const CTASection = () => (
   <section id="cta" className="section-padding relative overflow-hidden">
-    <div className="glow-orb w-[500px] h-[500px] bg-primary/15 top-[-150px] right-[-150px] animate-pulse-glow" />
-    <div className="glow-orb w-[400px] h-[400px] bg-secondary/15 bottom-[-100px] left-[-100px] animate-pulse-glow" style={{ animationDelay: '2s' }} />
+    <div className="glow-orb w-[500px] h-[500px] bg-primary/40 top-[-150px] right-[-150px] animate-pulse-glow" />
+    <div className="glow-orb w-[400px] h-[400px] bg-secondary/40 bottom-[-100px] left-[-100px] animate-pulse-glow" style={{ animationDelay: '2s' }} />
 
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="max-w-3xl mx-auto text-center relative z-10"
+      className="max-w-4xl mx-auto text-center relative z-10"
     >
-      <div className="gradient-border rounded-3xl p-12 md:p-16 bg-card" style={{ boxShadow: 'var(--shadow-glow)' }}>
+      <div className="panel-vibrant rounded-3xl p-12 md:p-16 relative overflow-hidden" style={{ boxShadow: '0 30px 80px -20px hsl(254, 100%, 62%, 0.45), 0 0 0 1px hsl(48, 100%, 65%, 0.3)' }}>
         <div className="inline-flex items-center gap-2 gradient-glow-bg border border-primary/20 rounded-full px-4 py-1.5 mb-6">
           <Sparkles className="w-3.5 h-3.5 text-primary" />
           <span className="text-xs font-semibold text-primary uppercase tracking-wider">Limited Early Access</span>

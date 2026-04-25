@@ -5,9 +5,10 @@ import heroImage from "@/assets/hero-illustration.png";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background orbs */}
-      <div className="glow-orb w-[600px] h-[600px] bg-primary/20 top-[-200px] left-[-200px] animate-pulse-glow" />
-      <div className="glow-orb w-[500px] h-[500px] bg-secondary/20 bottom-[-100px] right-[-200px] animate-pulse-glow" style={{ animationDelay: '2s' }} />
+      {/* Background blobs - yellow + purple harmony */}
+      <div className="glow-orb w-[650px] h-[650px] bg-primary/60 top-[-220px] left-[-180px] animate-pulse-glow" />
+      <div className="glow-orb w-[550px] h-[550px] bg-secondary/40 top-[10%] right-[-200px] animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
+      <div className="glow-orb w-[500px] h-[500px] bg-accent/30 bottom-[-150px] left-[30%] animate-pulse-glow" style={{ animationDelay: '3s' }} />
       <div className="absolute inset-0" style={{ background: 'var(--gradient-hero)' }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">

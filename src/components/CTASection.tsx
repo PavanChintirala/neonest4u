@@ -31,7 +31,7 @@ const CTASection = () => (
             Request Demo
             <ArrowRight className="w-4 h-4" />
           </a>
-          <a href="#" className="border border-border bg-background text-foreground px-8 py-3.5 rounded-full font-semibold text-base hover:bg-muted transition-colors">
+          <a href="#" className="btn-secondary-outline px-8 py-3.5 rounded-full font-semibold text-base">
             Join the Waitlist
           </a>
         </div>

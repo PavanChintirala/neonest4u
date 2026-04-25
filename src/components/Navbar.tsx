@@ -7,7 +7,7 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/80 border-b border-border/50"
+      className="fixed top-0 left-0 right-0 z-50 glass-nav"
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -22,7 +22,7 @@ const Navbar = () => {
           <a href="#benefits" className="hover:text-foreground transition-colors">Benefits</a>
           <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
         </div>
-        <a href="#cta" className="gradient-bg text-primary-foreground px-5 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
+        <a href="#cta" className="cta-glow px-5 py-2.5 rounded-full text-sm font-semibold">
           Request Demo
         </a>
       </div>

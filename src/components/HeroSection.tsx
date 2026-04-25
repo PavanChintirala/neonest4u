@@ -35,7 +35,7 @@ const HeroSection = () => {
               Request Demo
               <ArrowRight className="w-4 h-4" />
             </a>
-            <a href="#cta" className="border border-border bg-background/80 backdrop-blur text-foreground px-8 py-3.5 rounded-full font-semibold text-base hover:bg-muted transition-colors inline-flex items-center gap-2">
+            <a href="#cta" className="btn-secondary-outline px-8 py-3.5 rounded-full font-semibold text-base inline-flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-primary" />
               Join Early Access
             </a>

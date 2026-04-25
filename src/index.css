@@ -6,51 +6,58 @@
 
 @layer base {
   :root {
-    /* Warm white background #FFFDF8 */
+    /* Warm white #FFFDF8 */
     --background: 42 100% 98%;
-    /* Text dark slate #1E1E1E */
-    --foreground: 0 0% 12%;
+    /* Dark text #181818 */
+    --foreground: 0 0% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 12%;
+    --card-foreground: 0 0% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 12%;
+    --popover-foreground: 0 0% 9%;
 
-    /* Primary Yellow #F4C430 */
-    --primary: 47 90% 57%;
-    --primary-foreground: 225 45% 17%;
+    /* Primary Yellow #FFD84D */
+    --primary: 48 100% 65%;
+    --primary-foreground: 0 0% 9%;
 
-    /* Dark Navy #16213E */
-    --secondary: 225 49% 17%;
-    --secondary-foreground: 42 100% 98%;
+    /* Purple #6C3BFF */
+    --secondary: 254 100% 62%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 42 50% 95%;
-    --muted-foreground: 225 15% 38%;
+    /* Soft Lavender #F3EEFF */
+    --muted: 258 100% 96%;
+    --muted-foreground: 254 25% 35%;
 
-    /* Accent Violet #6C63FF */
-    --accent: 244 100% 69%;
+    /* Deep Violet #4B1FD1 */
+    --accent: 256 74% 47%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 42 30% 88%;
-    --input: 42 30% 88%;
-    --ring: 47 90% 57%;
+    --border: 258 40% 90%;
+    --input: 258 40% 90%;
+    --ring: 254 100% 62%;
 
     --radius: 1.125rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(47, 95%, 60%), hsl(42, 90%, 52%));
-    --gradient-glow: linear-gradient(135deg, hsl(47, 95%, 60%, 0.22), hsl(244, 100%, 69%, 0.12));
-    --gradient-hero: radial-gradient(ellipse at 50% 0%, hsl(47, 95%, 60%, 0.18) 0%, hsl(42, 100%, 98%, 0.4) 45%, transparent 80%);
-    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(42, 60%, 98%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(47, 95%, 60%) 0%, hsl(42, 95%, 55%) 50%, hsl(38, 90%, 52%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(48, 100%, 65%) 0%, hsl(254, 100%, 62%) 100%);
+    --gradient-yellow: linear-gradient(135deg, hsl(48, 100%, 70%) 0%, hsl(45, 100%, 58%) 100%);
+    --gradient-purple: linear-gradient(135deg, hsl(254, 100%, 62%) 0%, hsl(256, 74%, 47%) 100%);
+    --gradient-glow: linear-gradient(135deg, hsl(48, 100%, 65%, 0.25), hsl(254, 100%, 62%, 0.18));
+    --gradient-hero: radial-gradient(ellipse at 20% 10%, hsl(48, 100%, 65%, 0.32) 0%, transparent 45%),
+                     radial-gradient(ellipse at 85% 30%, hsl(254, 100%, 62%, 0.22) 0%, transparent 50%),
+                     radial-gradient(ellipse at 50% 90%, hsl(258, 100%, 92%, 0.6) 0%, transparent 60%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(258, 100%, 99%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(48, 100%, 65%) 0%, hsl(45, 100%, 58%) 50%, hsl(42, 100%, 54%) 100%);
+    --gradient-cta-purple: linear-gradient(135deg, hsl(254, 100%, 62%) 0%, hsl(256, 74%, 47%) 100%);
+    --gradient-panel: linear-gradient(135deg, hsl(48, 100%, 65%) 0%, hsl(40, 100%, 60%) 35%, hsl(280, 90%, 60%) 70%, hsl(254, 100%, 62%) 100%);
 
-    --shadow-glow: 0 0 80px hsl(47, 95%, 60%, 0.25);
-    --shadow-card: 0 6px 24px hsl(225, 49%, 17%, 0.06), 0 2px 6px hsl(225, 49%, 17%, 0.04);
-    --shadow-card-hover: 0 18px 50px hsl(47, 95%, 50%, 0.18), 0 4px 12px hsl(225, 49%, 17%, 0.08);
-    --shadow-cta: 0 14px 40px -8px hsl(47, 95%, 50%, 0.55), 0 0 0 1px hsl(47, 95%, 50%, 0.2);
+    --shadow-glow: 0 0 100px hsl(48, 100%, 65%, 0.3), 0 0 60px hsl(254, 100%, 62%, 0.15);
+    --shadow-card: 0 6px 24px hsl(254, 60%, 30%, 0.08), 0 2px 6px hsl(254, 60%, 30%, 0.04);
+    --shadow-card-hover: 0 20px 50px hsl(254, 100%, 62%, 0.18), 0 4px 12px hsl(48, 100%, 50%, 0.12);
+    --shadow-cta: 0 14px 40px -8px hsl(48, 100%, 55%, 0.55), 0 0 0 1px hsl(48, 100%, 55%, 0.25);
 
     --font-display: 'Manrope', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -134,35 +141,39 @@
     position: relative;
     background-image: var(--gradient-cta);
     background-size: 200% 200%;
-    color: hsl(225, 49%, 17%);
+    color: hsl(0, 0%, 9%);
     animation: gradient-shift 6s ease infinite;
     box-shadow: var(--shadow-cta);
-    transition: transform 0.25s ease, box-shadow 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.3s ease, background-image 0.4s ease;
   }
 
   .cta-glow:hover {
     transform: translateY(-3px);
-    box-shadow: 0 20px 50px -10px hsl(47, 95%, 50%, 0.7), 0 0 0 1px hsl(47, 95%, 50%, 0.35);
+    background-image: var(--gradient-cta-purple);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 20px 50px -10px hsl(254, 100%, 62%, 0.6), 0 0 0 1px hsl(254, 100%, 62%, 0.35);
   }
 
   .btn-secondary-outline {
-    background: hsl(var(--background));
-    color: hsl(var(--secondary));
-    border: 1.5px solid hsl(var(--secondary) / 0.25);
+    background: hsl(var(--muted));
+    color: hsl(var(--accent));
+    border: 1.5px solid hsl(var(--secondary) / 0.4);
     transition: all 0.25s ease;
   }
 
   .btn-secondary-outline:hover {
     border-color: hsl(var(--secondary));
+    background: hsl(var(--secondary));
+    color: hsl(0, 0%, 100%);
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px -8px hsl(225, 49%, 17%, 0.25);
+    box-shadow: 0 10px 28px -8px hsl(254, 100%, 62%, 0.45);
   }
 
   .glass-nav {
-    background: hsl(42, 100%, 98%, 0.7);
+    background: hsl(42, 100%, 98%, 0.65);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-    border-bottom: 1px solid hsl(42, 30%, 88%, 0.6);
+    border-bottom: 1px solid hsl(258, 60%, 88%, 0.5);
   }
 
   @keyframes gradient-shift {
@@ -173,8 +184,8 @@
   .glow-orb {
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.3;
+    filter: blur(90px);
+    opacity: 0.5;
     pointer-events: none;
   }
 
@@ -182,7 +193,23 @@
     @apply py-24 md:py-32 px-6;
   }
 
+  /* Alternating section backgrounds */
   .section-alt {
-    background: linear-gradient(180deg, hsl(42, 100%, 98%) 0%, hsl(42, 60%, 96%) 100%);
+    background: linear-gradient(180deg, hsl(48, 100%, 96%) 0%, hsl(48, 100%, 94%) 100%);
+  }
+
+  .section-lavender {
+    background: linear-gradient(180deg, hsl(258, 100%, 97%) 0%, hsl(258, 100%, 95%) 100%);
+  }
+
+  .section-white {
+    background: hsl(0, 0%, 100%);
+  }
+
+  /* Vibrant CTA panel for footer/cta */
+  .panel-vibrant {
+    background-image: var(--gradient-panel);
+    background-size: 200% 200%;
+    animation: gradient-shift 10s ease infinite;
   }
 }

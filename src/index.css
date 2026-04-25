@@ -179,6 +179,10 @@
   }
 
   .section-padding {
-    @apply py-20 md:py-28 px-6;
+    @apply py-24 md:py-32 px-6;
+  }
+
+  .section-alt {
+    background: linear-gradient(180deg, hsl(42, 100%, 98%) 0%, hsl(42, 60%, 96%) 100%);
   }
 }

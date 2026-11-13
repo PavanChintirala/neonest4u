@@ -8,18 +8,18 @@ const Footer = () => (
           <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
             <Zap className="w-4 h-4 text-primary-foreground" />
           </div>
-          <span className="font-display font-bold text-xl text-foreground">NeoHome</span>
+          <span className="font-display font-bold text-xl text-foreground">Neonest4u</span>
         </div>
 
         <div className="flex items-center gap-6 text-sm text-muted-foreground">
-          <a href="mailto:hello@neohome.ai" className="hover:text-foreground transition-colors">hello@neohome.ai</a>
+          <a href="mailto:hello@neonest4u.ai" className="hover:text-foreground transition-colors">hello@neonest4u.ai</a>
           <a href="#" className="hover:text-foreground transition-colors">Twitter</a>
           <a href="#" className="hover:text-foreground transition-colors">LinkedIn</a>
         </div>
       </div>
 
       <div className="mt-8 pt-6 border-t border-border/50 text-center">
-        <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} NeoHome. All rights reserved.</p>
+        <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Neonest4u. All rights reserved.</p>
       </div>
     </div>
   </footer>

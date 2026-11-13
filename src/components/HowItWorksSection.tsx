@@ -3,7 +3,7 @@ import { PhoneCall, Brain, ClipboardCheck, Users } from "lucide-react";
 
 const steps = [
   { icon: PhoneCall, title: "Resident reaches out", desc: "By phone or chat — anytime, day or night." },
-  { icon: Brain, title: "NeoHome understands", desc: "AI captures the request and gathers the right details." },
+  { icon: Brain, title: "Neonest4u understands", desc: "AI captures the request and gathers the right details." },
   { icon: ClipboardCheck, title: "Structured ticket created", desc: "Categorized, prioritized, and ready to act on." },
   { icon: Users, title: "Your team takes action", desc: "Clear, organized work routed to the right people." },
 ];

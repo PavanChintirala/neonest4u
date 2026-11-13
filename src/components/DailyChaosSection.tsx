@@ -47,7 +47,7 @@ const DailyChaosSection = () => (
         viewport={{ once: true }}
         className="text-center font-display text-2xl md:text-3xl font-bold"
       >
-        <span className="gradient-text">NeoHome fixes this.</span>
+        <span className="gradient-text">Neonest4u fixes this.</span>
       </motion.p>
     </div>
   </section>

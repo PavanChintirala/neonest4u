@@ -1,110 +1,98 @@
 import { motion } from "framer-motion";
-import { PhoneCall, MessageSquare, Wrench, ArrowRight, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-illustration.png";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+
+const summaryRows = [
+  { label: "Issue", value: "Kitchen sink leak" },
+  { label: "Location", value: "Under-sink plumbing" },
+  { label: "Condition", value: "Active leak" },
+  { label: "Details", value: "Collected from resident" },
+];
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background blobs - yellow + purple harmony */}
-      <div className="glow-orb w-[650px] h-[650px] bg-primary/60 top-[-220px] left-[-180px] animate-pulse-glow" />
-      <div className="glow-orb w-[550px] h-[550px] bg-secondary/40 top-[10%] right-[-200px] animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
-      <div className="glow-orb w-[500px] h-[500px] bg-accent/30 bottom-[-150px] left-[30%] animate-pulse-glow" style={{ animationDelay: '3s' }} />
-      <div className="absolute inset-0" style={{ background: 'var(--gradient-hero)' }} />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <section id="top" className="relative pt-32 pb-20 md:pt-40 md:pb-28 px-6 overflow-hidden">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-14 lg:gap-10 items-center">
+        {/* Editorial copy */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          className="lg:col-span-6"
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <div className="inline-flex items-center gap-2 gradient-glow-bg border border-primary/20 rounded-full px-4 py-1.5 mb-6">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-primary">AI-Powered Community Operations</span>
-          </div>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-foreground mb-6">
-            Stop Losing Track of{" "}
-            <span className="gradient-text">Resident Requests</span>
+          <p className="section-label mb-5">Maintenance intake for residential teams</p>
+          <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] font-semibold leading-[1.08] tracking-tight text-foreground mb-6">
+            Maintenance requests,
+            <br />
+            without the back-and-forth.
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-4 leading-relaxed">
-            Neonest handles calls, messages, and maintenance requests — and turns them into organized, trackable work automatically.
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-md mb-9">
+            Give residents a simpler way to report issues — and your team the details they need to move forward.
           </p>
-          <p className="text-base text-foreground/70 max-w-xl mb-8 font-medium">
-            No more missed calls. No more scattered notes. No more things slipping through.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <a href="#cta" className="cta-glow text-primary-foreground px-8 py-3.5 rounded-full font-semibold text-base inline-flex items-center gap-2">
-              Request Demo
+          <div className="flex flex-wrap items-center gap-3">
+            <a href="#demo" className="btn-primary">
+              Request a Demo
               <ArrowRight className="w-4 h-4" />
             </a>
-            <a href="#cta" className="btn-secondary-outline px-8 py-3.5 rounded-full font-semibold text-base inline-flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-primary" />
-              Join Early Access
+            <a href="#how-it-works" className="btn-secondary">
+              See How It Works
             </a>
           </div>
         </motion.div>
 
+        {/* Product mockup — illustrative intake workflow */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative flex justify-center"
+          className="lg:col-span-6"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
         >
-          <div className="animate-float relative">
-            <img
-              src={heroImage}
-              alt="Neonest AI assistant turning resident calls and chats into organized tickets"
-              className="w-full max-w-lg drop-shadow-2xl"
-            />
+          <div className="surface-card overflow-hidden max-w-lg mx-auto lg:ml-auto">
+            <div className="flex items-center justify-between px-5 py-3 border-b border-border bg-secondary/40">
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded bg-primary flex items-center justify-center">
+                  <span className="text-primary-foreground text-[10px] font-semibold">N</span>
+                </div>
+                <span className="text-sm font-medium text-foreground">NeoNest Intake</span>
+              </div>
+              <span className="text-[11px] text-muted-foreground">Illustrative workflow</span>
+            </div>
 
-            {/* Floating indicators: input → AI → output */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.8, duration: 0.6 }}
-              className="absolute top-6 -left-2 md:-left-6 bg-background/90 backdrop-blur border border-border rounded-2xl px-4 py-3 shadow-lg flex items-center gap-2"
-              style={{ boxShadow: 'var(--shadow-card)' }}
-            >
-              <div className="w-8 h-8 rounded-lg gradient-glow-bg flex items-center justify-center">
-                <PhoneCall className="w-4 h-4 text-primary" />
+            <div className="p-5 space-y-3">
+              <div className="flex justify-end">
+                <div className="bubble-resident max-w-[80%]">My kitchen sink is leaking.</div>
               </div>
-              <div className="text-left">
-                <div className="text-xs font-semibold text-foreground">Incoming call</div>
-                <div className="text-[10px] text-muted-foreground">Resident #204</div>
+              <div className="flex justify-start">
+                <div className="bubble-neonest max-w-[85%]">
+                  Is the water leaking from the faucet, the pipes underneath, or somewhere else?
+                </div>
               </div>
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            </motion.div>
+              <div className="flex justify-end">
+                <div className="bubble-resident max-w-[80%]">From the pipe under the sink.</div>
+              </div>
+              <div className="flex justify-start">
+                <div className="bubble-neonest max-w-[85%]">Is water actively leaking right now?</div>
+              </div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 1.1, duration: 0.6 }}
-              className="absolute top-1/2 -right-2 md:-right-6 bg-background/90 backdrop-blur border border-border rounded-2xl px-4 py-3 shadow-lg flex items-center gap-2"
-              style={{ boxShadow: 'var(--shadow-card)' }}
-            >
-              <div className="w-8 h-8 rounded-lg gradient-glow-bg flex items-center justify-center">
-                <MessageSquare className="w-4 h-4 text-secondary" />
+            <div className="mx-5 mb-5 rounded-lg border border-border bg-background p-4">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  Request summary
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-xs font-medium text-primary">
+                  <CheckCircle2 className="w-3.5 h-3.5" />
+                  Ready for review
+                </span>
               </div>
-              <div className="text-left">
-                <div className="text-xs font-semibold text-foreground">New chat</div>
-                <div className="text-[10px] text-muted-foreground">"Pool hours?"</div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.4, duration: 0.6 }}
-              className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-background/90 backdrop-blur border border-border rounded-2xl px-4 py-3 shadow-lg flex items-center gap-2"
-              style={{ boxShadow: 'var(--shadow-card)' }}
-            >
-              <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
-                <Wrench className="w-4 h-4 text-primary-foreground" />
-              </div>
-              <div className="text-left">
-                <div className="text-xs font-semibold text-foreground">Ticket #1287 created</div>
-                <div className="text-[10px] text-muted-foreground">Routed to maintenance</div>
-              </div>
-            </motion.div>
+              <dl className="space-y-2">
+                {summaryRows.map((row) => (
+                  <div key={row.label} className="flex items-baseline gap-3 text-sm">
+                    <dt className="w-20 shrink-0 text-muted-foreground">{row.label}</dt>
+                    <dd className="text-foreground font-medium">{row.value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
           </div>
         </motion.div>
       </div>

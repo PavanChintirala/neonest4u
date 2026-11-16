@@ -22,7 +22,7 @@ const BenefitsSection = () => (
       >
         <span className="text-sm font-semibold text-primary uppercase tracking-widest">Benefits</span>
         <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3 mb-4">
-          Why Teams Choose <span className="gradient-text">Neonest4u</span>
+          Why Teams Choose <span className="gradient-text">Neonest</span>
         </h2>
       </motion.div>
 

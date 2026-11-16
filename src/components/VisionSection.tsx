@@ -17,7 +17,7 @@ const VisionSection = () => (
           <span className="gradient-text">communication and operations</span>
         </h2>
         <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-          Neonest4u is building the system that connects communication and operations for residential communities.
+          Neonest is building the system that connects communication and operations for residential communities.
         </p>
       </motion.div>
     </div>

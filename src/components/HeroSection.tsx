@@ -26,7 +26,7 @@ const HeroSection = () => {
             <span className="gradient-text">Resident Requests</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-4 leading-relaxed">
-            Neonest4u handles calls, messages, and maintenance requests — and turns them into organized, trackable work automatically.
+            Neonest handles calls, messages, and maintenance requests — and turns them into organized, trackable work automatically.
           </p>
           <p className="text-base text-foreground/70 max-w-xl mb-8 font-medium">
             No more missed calls. No more scattered notes. No more things slipping through.
@@ -52,7 +52,7 @@ const HeroSection = () => {
           <div className="animate-float relative">
             <img
               src={heroImage}
-              alt="Neonest4u AI assistant turning resident calls and chats into organized tickets"
+              alt="Neonest AI assistant turning resident calls and chats into organized tickets"
               className="w-full max-w-lg drop-shadow-2xl"
             />
 

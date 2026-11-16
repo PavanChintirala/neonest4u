@@ -51,7 +51,7 @@ const ObjectionsSection = () => (
           <Check className="w-5 h-5 text-primary-foreground" strokeWidth={3} />
         </div>
         <p className="text-foreground font-medium leading-relaxed">
-          Neonest4u captures requests no matter how they come in — and keeps everything in one system.
+          Neonest captures requests no matter how they come in — and keeps everything in one system.
         </p>
       </motion.div>
     </div>
